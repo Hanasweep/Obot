@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanasweep Profile</title>
+    <style>
+        /* Warna Modern & Minimalis */
+        :root {
+            --background-color: #1e1e1e;
+            --card-color: #2a2a2a;
+            --text-color: #ffffff;
+            --highlight-color: #00ff7f;
+            --button-color: #008f4c;
+            --button-hover: #006837;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        /* Logo */
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--highlight-color);
+            padding: 5px;
+            box-shadow: 0 0 15px rgba(0, 255, 127, 0.5);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--highlight-color);
+        }
+
+        /* Card Profile */
+        .profile-box {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            background: var(--card-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 450px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Efek Kilauan Kaca */
+        .profile-box::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(30deg);
+            animation: shine 3s infinite linear;
+        }
+
+        @keyframes shine {
+            0% { left: -100%; top: -100%; }
+            100% { left: 100%; top: 100%; }
+        }
+
+        /* Foto Profil (Kotak) */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            border: 4px solid var(--highlight-color);
+            padding: 5px;
+            background: var(--card-color);
+        }
+
+        p {
+            font-size: 16px;
+            color: #bfbfbf;
+        }
+
+        /* Tombol */
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            color: #fff;
+            background-color: var(--button-color);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 3px 7px rgba(0, 122, 204, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: var(--button-hover);
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="https://drive.google.com/uc?export=download&id=10N1o7kWJsjX3VEmimVJ_dxY3QS5uF5iX" alt="Logo" class="logo">
+        <h1>Hanasweep Profile</h1>
+
+        <div class="profile-box">
+            <!-- Foto Profil (Kotak) -->
+            <img src="https://drive.google.com/uc?export=download&id=107jNJgaGu-F4-YtsYi_eGc6XcrExMAhL" alt="Profile Picture" class="profile-pic">
+            <p>Selamat datang di halaman profil saya! Jelajahi lebih lanjut tentang saya di sini.</p>
+            <a href="#" class="button">Lihat Profil</a>
+        </div>
+    </div>
+
+    <!-- Backsound -->
+    <audio id="backsound" autoplay loop>
+        <source src="https://drive.google.com/uc?export=download&id=109-Xn6yB9bgW2k3aVWt9M-Ui9OxQy63v" type="audio/mp3">
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById("backsound");
+            audio.volume = 0.3;  // Volume 30% agar tidak terlalu keras
+        });
+    </script>
+</body>
+</html>
