@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanasweep</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Hubungkan dengan CSS -->
+</head>
+<body>
+
+    <nav class="menu">
+        <div class="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu_list"> 
+            <div class="radio-wrapper">
+                <a href="index.html" style="background-color: transparent;" >
+                    <div class="btn">
+                        <h1>HOME</h1>
+                    </div>
+                </a>
+            </div>
+                
+            <div class="radio-wrapper">
+                <a href="chatbot.html" style="background-color: transparent;" >
+                    <div class="btn">
+                        <h1>chat</h1>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="radio-wrapper">
+                <a href="song.html" style="background-color: transparent;" >
+                <div class="btn">
+                    <h1>song</h1>
+                </div>
+            </a>
+            </div>
+    
+            <div class="radio-wrapper">
+                <a href="info.html" style="background-color: transparent;" >
+                <div class="btn">
+                    <h1>info</h1>
+                </div>
+            </a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        
+        <input type="text" id="user-input" placeholder="Ketik pesan..." onkeypress="handleKey(event)">
+        <button onclick="sendMessage()">Kirim</button>
+    </div>
+    </div>
+        
+    <div class="desktop-warning">
+        ⚠️ Maaf, website ini hanya bisa dibuka di perangkat seluler 📱. Silakan gunakan handphone Anda untuk mengaksesnya! 😊
+        <div class="gif-container_warning">
+            <img src="assets/img/animasi4.gif" alt="GIF Animasi">
+        </div>   
+    </div>
+
+    <script src="script.js"></script> <!-- Hubungkan dengan JavaScript -->
+</body>
+</html>
+
